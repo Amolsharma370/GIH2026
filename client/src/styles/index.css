@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #root {
+    @apply bg-void text-primary font-body;
+    height: 100%;
+  }
+  * { box-sizing: border-box; }
+
+  .leaflet-container { background: #0A121F !important; }
+
+  .leaflet-control-attribution {
+    background: rgba(10,18,31,0.8) !important;
+    color: #7E93AC !important;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 10px !important;
+  }
+
+  .leaflet-control-zoom a {
+    background: #101B2D !important;
+    color: #E8EEF5 !important;
+    border-color: #2B4A66 !important;
+  }
+  .leaflet-control-zoom a:hover { background: #16243A !important; }
+
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: #101B2D; }
+  ::-webkit-scrollbar-thumb { background: #2B4A66; border-radius: 2px; }
+}
+
+@layer utilities {
+  .font-data { font-family: "IBM Plex Mono", monospace; }
+  .border-blueprint { border-color: rgba(43,74,102,0.6); }
+}
